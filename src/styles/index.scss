@@ -1,0 +1,37 @@
+@import "./flex.scss";
+
+.mt-sm {
+  margin-top: 10px;
+}
+.mb-sm {
+  margin-bottom: 10px;
+}
+.mr-sm {
+  margin-right: 10px;
+}
+.ml-sm {
+  margin-left: 10px;
+}
+
+.mt-md {
+  margin-top: 20px;
+}
+.mb-md {
+  margin-bottom: 20px;
+}
+.mr-md {
+  margin-right: 20px;
+}
+.ml-md {
+  margin-left: 20px;
+}
+
+.panel {
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 20px;
+}
