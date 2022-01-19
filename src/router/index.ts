@@ -57,9 +57,20 @@ export const routes: RouteRecordRaw[] = [
   },
 ];
 
+const pageRoutes: RouteRecordRaw[] = [
+  {
+    path: "/404",
+    component: () => import("@/layouts/404.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    redirect: "/404",
+  },
+];
+
 const router = createRouter({
   history: createWebHashHistory(),
-  routes,
+  routes: [...routes, ...pageRoutes],
 });
 
 export default router;
